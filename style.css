@@ -119,6 +119,63 @@ body {
     padding: 20px;
 }
 
+/* Certificate Layout */
+.certificate-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.cert-item {
+    max-width: 400px; /* Adjust based on how large you want it */
+    text-align: center;
+}
+
+.cert-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #333; /* Subtle border */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Deep shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Image Layout */
+.image-container {
+    margin-top: 5px;
+    display: flex;
+    justify-content: left;
+}
+
+.image-item {
+    max-width: 400px; /* Adjust based on how large you want it */
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #333; /* Subtle border */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Deep shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect: "Lifts" when moused over */
+.image:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(255, 62, 62, 0.2); /* Cinematic glow */
+}
+
+.image-item figcaption {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 /* --- Hamburger Icon Styling --- */
 .hamburger {
     display: none; /* Hidden on desktop */
